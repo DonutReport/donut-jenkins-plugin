@@ -6,6 +6,10 @@
 
 This is a jenkins plugin for donut. More about donut [here](http://github.com/MagenTys/donut).
 
+#### Pre-Requisites:
+
+In case reports are not rendered properly you will need to Relax the Content Security Policy.
+Instructions on how to do that can be found [here](https://wiki.jenkins-ci.org/display/JENKINS/Configuring+Content+Security+Policy).
 
 ### License
 
