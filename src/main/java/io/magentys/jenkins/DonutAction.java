@@ -30,6 +30,10 @@ public abstract class DonutAction implements Action {
     }
 
     public void doDynamic(StaplerRequest req, StaplerResponse rsp) throws IOException, ServletException {
+        // Relax the Content Security Policy
+        System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "");
+        System.setProperty("jenkins.model.DirectoryBrowserSupport.CSP", "");
+
         DirectoryBrowserSupport dbs = new DirectoryBrowserSupport(this, new FilePath(this.dir()), this.getTitle(), getUrlName(), false);
         File report = new File(dir(), DONUT_REPORT_FILENAME);
 
