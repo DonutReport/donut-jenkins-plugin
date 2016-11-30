@@ -6,7 +6,7 @@
   </f:entry>  
     
   <f:advanced>
-    <f:entry field="customAttributes" title="Custom Attributes">
+    <f:entry field="customAttributes" title="Custom Attributes" description="Name/value pairs that are tolerant of spaces and support both environment variables and maven properties (root pom only)">
         <f:textarea />
     </f:entry>
 

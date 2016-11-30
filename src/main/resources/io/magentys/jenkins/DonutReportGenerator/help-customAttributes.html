@@ -1,0 +1,14 @@
+<div>
+    <p>Additional custom name/value pairs to be displayed in the report. Both the name and value are
+    tolerant of space characters, i.e.<p>
+    <pre><code>
+        App Version=1.0
+        Comment=This is some comment with space characters
+    </code></pre>
+    <p>Both environment variables and maven properties can be specified for the value field, i.e.<p>
+    <pre><code>
+        Path=$PATH //Env var
+        App Version=$app.version //Maven property
+    </code></pre>
+    <p><b>Note:</b> The plugin only resolves maven properties specified in the root pom.xml file.</p>
+</div>
