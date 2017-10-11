@@ -7,7 +7,7 @@
 		<version>1.609.3</version>
 	</parent>
 
-	<groupId>io.magentys</groupId>
+	<groupId>report.donut</groupId>
 	<artifactId>donut-jenkins-plugin</artifactId>
 	<name>Donut plugin</name>
 	<version>0.0.1-SNAPSHOT</version>
@@ -35,8 +35,8 @@
 	</developers>
 
 	<scm>
-		<developerConnection>scm:git:git@github.com:MagenTys/donut-jenkins-plugin.git</developerConnection>
-		<url>https://github.com/MagenTys/donut-jenkins-plugin</url>
+		<developerConnection>scm:git:git@github.com:DonutReport/donut-jenkins-plugin.git</developerConnection>
+		<url>https://github.com/DonutReport/donut-jenkins-plugin</url>
 		<tag>HEAD</tag>
 	</scm>
 

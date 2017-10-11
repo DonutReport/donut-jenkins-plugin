@@ -1,4 +1,4 @@
-package io.magentys.jenkins;
+package report.donut.jenkins;
 
 import hudson.model.ProminentProjectAction;
 import hudson.model.AbstractItem;
