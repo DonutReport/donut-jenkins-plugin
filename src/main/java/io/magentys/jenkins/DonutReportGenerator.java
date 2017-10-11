@@ -36,7 +36,7 @@ import java.util.Properties;
 public class DonutReportGenerator extends Recorder implements SimpleBuildStep {
 
     private static final String[] DEFAULT_FILE_INCLUDES = new String[] { "**/*.json" };
-    public final String sourceDirectory;
+    public final String sourceDirectories;
     public final boolean countSkippedAsFailure;
     public final boolean countPendingAsFailure;
     public final boolean countUndefinedAsFailure;
@@ -44,9 +44,9 @@ public class DonutReportGenerator extends Recorder implements SimpleBuildStep {
     public final String customAttributes;
 
     @DataBoundConstructor
-    public DonutReportGenerator(String sourceDirectory, boolean countSkippedAsFailure, boolean countPendingAsFailure, boolean countUndefinedAsFailure,
-            boolean countMissingAsFailure, String customAttributes) {
-        this.sourceDirectory = sourceDirectory;
+    public DonutReportGenerator(String sourceDirectories, boolean countSkippedAsFailure, boolean countPendingAsFailure, boolean countUndefinedAsFailure,
+                                boolean countMissingAsFailure, String customAttributes) {
+        this.sourceDirectories = sourceDirectories;
         this.countSkippedAsFailure = countSkippedAsFailure;
         this.countPendingAsFailure = countPendingAsFailure;
         this.countUndefinedAsFailure = countUndefinedAsFailure;
@@ -56,7 +56,7 @@ public class DonutReportGenerator extends Recorder implements SimpleBuildStep {
 
     @Override
     public void perform(Run<?, ?> build, FilePath workspace, Launcher launcher, TaskListener listener) throws IOException, InterruptedException {
-        FilePath workspaceSourceDirectory = new FilePath(workspace, sourceDirectory);
+        FilePath workspaceSourceDirectory = new FilePath(workspace, sourceDirectories);
         File outputDirectory = new File(build.getRootDir(), "donut");
         String buildName = build.getParent().getName();
         String buildNumber = Integer.toString(build.getNumber());
