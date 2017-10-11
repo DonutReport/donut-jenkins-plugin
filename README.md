@@ -1,4 +1,4 @@
-![](http://magentys.github.io/donut/img/Donut-05.png)
+![](http://donutreport.github.io/donut/img/Donut-05.png)
 
 [![Build Status](https://travis-ci.org/DonutReport/donut-jenkins-plugin.svg?branch=master)](https://travis-ci.org/DonutReport/donut-jenkins-plugin)
 
