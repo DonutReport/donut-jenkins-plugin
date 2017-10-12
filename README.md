@@ -15,6 +15,6 @@ Instructions on how to do that can be found [here](https://wiki.jenkins-ci.org/d
 
 This project is under an MIT license
 
-Powered by: [MagenTys](http://magentys.io), [MechanicalRock](https://www.mechanicalrock.io/#/)
+Powered by: [MagenTys](https://magentys.io) & [Mechanical Rock](https://www.mechanicalrock.io)
 
 
